@@ -1,0 +1,18 @@
+<%-contentFor('body')%>
+<div class="container">
+  <div class="h-100 p-5 bg-light border rounded-3 m-4">
+    <h2>Todo-Lists</h2>
+    <p>Belajar Membuat todo lists</p>
+    <form action="/home/create" method="post">
+      <div class="mb-3">
+        <label for="judul" class="form-label">Judul</label>
+        <input type="text" name="judul" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="tanggal" class="form-label">tanggal</label><br />
+        <input type="datetime-local" name="tanggal" />
+      </div>
+      <button type="submit" class="btn btn-primary">Buat todo</button>
+    </form>
+  </div>
+</div>
